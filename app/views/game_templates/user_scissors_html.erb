@@ -11,18 +11,16 @@
 <div><a href= "/paper">Play Paper</a></div>
 <div><a href= "/scissors">Play Scissors</a></div>
 
-
-<h2>We played rock!</h2>
+<h2>We played scissors!</h2>
 <% com_move=["rock","paper","scissors"].sample %>
 <h2>They played <%=com_move%>!</h2>
 <% if com_move == "rock" %>
-  <h2>We tied!</h2>
-<% elsif com_move == "paper" %>
   <h2>We lost!</h2>
-<% elsif com_move == "scissors" %>
+<% elsif com_move == "paper" %>
   <h2>We won!</h2>
+<% elsif com_move == "scissors" %>
+  <h2>We tied!</h2>
 <%end%>
-
 <div><a href= "https://3000-tianranlong-rpsrcav-5w0dtfpnyiz.ws-us72.gitpod.io/">Rules</a></div>
 
 </body>
